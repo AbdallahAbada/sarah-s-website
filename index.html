@@ -1,171 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sara Elnagar</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="/background-imgs/s-letter-logo-png-924796 copy.png">
-
-
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- CSS STYLE SHEET -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo">Sara Elnagar</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> 
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="new-about-us.html" class="navbar__links" id="about-page">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="services.html" class="navbar__links" id="services-page">Services</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="gallery.html" class="navbar__links" id="gallery-page">Gallery</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contact.html" class="navbar__links" id="contact-page">Contact</a>
-                </li>
-            </ul>
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">Sara Elnagar</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="new-about-us.html" class="navbar__links" id="about-page"
+              >About</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="services.html" class="navbar__links" id="services-page"
+              >Services</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="gallery.html" class="navbar__links" id="gallery-page"
+              >Gallery</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html" class="navbar__links" id="contact-page"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-    <HEADER>
-        <div class="home_wrapper">
-            <div class="home_container">
-                <div class="home_item">
-                    <div class="home_text">
-                        <h3>Sarah Elnaggar</h3>
-                        <h1>Egypt-Based Illustrator And Artist</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In veritatis ipsa illo? Quas rem nostrum dolor perspiciatis, aperiam labore laudantium ratione nulla! Aperiam eius vel dolor delectus earum consequatur sed.</p>
-                    </div>
-                    <div class="image_home">
-                        <img src="Photos2/18.png" alt="sarah website">
-                        <div>
-                            <a class="about_me_button" href="new-about-us.html" target="_blank"><button>About Me</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </HEADER>
+    <!-- HOME SECTION -->
+    <section id="home">
+      <video class="video-bg" autoplay muted loop>
+        <source src="/Video/School - 80 (1).mp4" type="video/mp4" />
+      </video>
+      <div class="container-fluid home-container">
+        <div class="row home-row">
+          <div class="col-lg-7 col-md-12 home_text">
+            <h3>Sarah Elnaggar</h3>
+            <h1>Egypt-Based Illustrator And Artist</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              veritatis ipsa illo? Quas rem nostrum dolor perspiciatis, aperiam
+              labore laudantium ratione nulla! Aperiam eius vel dolor delectus
+              earum consequatur sed.
+            </p>
+          </div>
+          <div class="col-lg-5 col-md-12 img-cta">
+            <img class="home-img" src="Photos2/18.png" alt="sarah website" />
+            <div>
+              <a
+                class="about_me_button"
+                href="new-about-us.html"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+          <div id="home-cta">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg home-cta-tst">
+                  <form action="new-about-us.html">
+                    <input class="home-btn" type="submit" value="Read More" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Home Section Start -->
-    
+
     <!-- Home Section End -->
     <!-- image slider start -->
-    <div class="slider">
+    <section id="slider">
+      <div class="slider">
         <div class="slides">
-            <!-- Radio button start -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
-            <input type="radio" name="radio-btn" id="radio7">
-            <!-- Radio button end -->
-            <!-- Slide Images Start -->
-            <div class="slide first ">
-                <img src="photos/photo1.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo2.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo3.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo4.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo5.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo6.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo7.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="photos/photo7.png" alt="">
-            </div>
-            <!-- Slide Images End -->
-            <!-- Automatic Navigation Start -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-                <div class="auto-btn5"></div>
-                <div class="auto-btn6"></div>
-                <div class="auto-btn7"></div>
-            </div>
-            <!-- Automatic Navigation End -->
+          <!-- Radio button start -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <input type="radio" name="radio-btn" id="radio5" />
+          <input type="radio" name="radio-btn" id="radio6" />
+          <input type="radio" name="radio-btn" id="radio7" />
+          <!-- Radio button end -->
+          <!-- Slide Images Start -->
+          <div class="slide first">
+            <img src="photos/photo1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo4.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo5.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo6.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo7.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="photos/photo7.png" alt="" />
+          </div>
+          <!-- Slide Images End -->
+          <!-- Automatic Navigation Start -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
+            <div class="auto-btn7"></div>
+          </div>
+          <!-- Automatic Navigation End -->
         </div>
         <!-- Manual Navigation Start -->
         <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
-            <label for="radio6" class="manual-btn"></label>
-            <label for="radio7" class="manual-btn"></label>
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
+          <label for="radio7" class="manual-btn"></label>
         </div>
         <!-- Manual Navigation End -->
-    </div>
+      </div>
+    </section>
     <!-- image slider end -->
     <!-- FOOTER -->
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer_wrapper">
-            <div class="footer_container">
-                <div class="first__culm">
-                    <h2 class="space">Sarah Elnaggr</h2>
-                    <p>Let's get creative</p>
-                </div>
-                <div class="first__culm">
-                    <p class="space">sarah@sarah-elnaggar.com</p>
-                    <p>+0201223395022</p>
-                </div>
-                <div class="first__culm">
-                    <p class="space">Avenue d’Auderghem 10</p>
-                    <p>1040 Brussels, Belgium</p>
-                </div>
-                <div class="first__culm">
-                    <p class="space">Stay in touch</p>
-                    <div class="social_media">
-                        <a href="https://www.behance.net/sarah-elnaggar" target="_blank">
-                            <i class="fa-brands fa-behance"></i>
-                        </a>
-                        <a href="https://www.instagram.com/naggarsarah/?igshid=YmMyMTA2M2Y=" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                    
-                        </a>
-                        <a href="https://www.pinterest.com/sarahenaggar/" target="_blank">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sarah-el-naggar-07bb0473" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section id="footer">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h2 class="sec-color space">Sarah Elnaggr</h2>
+          <p class="sec-color">Let's get creative</p>
         </div>
-    </footer>
+        <div class="col-lg-3 col-md-6">
+          <p class="sec-color space">sarah@sarah-elnaggar.com</p>
+          <p class="sec-color">+0201223395022</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="sec-color space">Avenue duderghem 10</p>
+          <p class="sec-color">1040 Brussels, Belgium</p>
+        </div>
+        <div class="col-lg-3 sec-color col-md-6">
+          <p class="space">Stay in touch</p>
+          <div class="social_media">
+            <a href="https://www.behance.net/sarah-elnaggar" target="_blank">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/naggarsarah/?igshid=YmMyMTA2M2Y="
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.pinterest.com/sarahenaggar/" target="_blank">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sarah-el-naggar-07bb0473"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- END OF FDOOTER -->
 
     <script src="app.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
