@@ -32,9 +32,9 @@ jobs:
         run: echo Hello, world! "$site_server"
 
       # Runs a set of commands using the runners shell
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ PRD.SITE_SERVER}}
-          username: ${{ PRD.SITE_USER}}
-          password: ${{ PRD.SITE_PASS}}
+#      - name: 📂 Sync files
+#        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+#        with:
+#          server: ${{ PRD.SITE_SERVER}}
+#          username: ${{ PRD.SITE_USER}}
+#          password: ${{ PRD.SITE_PASS}}
