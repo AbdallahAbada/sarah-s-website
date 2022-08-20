@@ -33,6 +33,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: '92.205.9.165'
-          username: 'github@sarah-elnaggar.com'
-          password: '@demodemo--'
+          server: ${{ secrets.SITE_SERVER}}
+          username: ${{ secrets.SITE_USER}}
+          password: ${{ secrets.SITE_PASS}}
