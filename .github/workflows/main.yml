@@ -36,6 +36,6 @@ jobs:
           SITE_USER: ${{ secrets.SITE_USER }}
           SITE_PASS: ${{ secrets.SITE_PASS }}
         with:
-          server: ${{ SITE_SERVER }}
-          username: ${{ SITE_USER }}
-          password: ${{ SITE_PASS }}
+          server: ${{ secrets.SITE_SERVER }}
+          username: ${{ secrets.SITE_USER }}
+          password: ${{ secrets.SITE_PASS }}
