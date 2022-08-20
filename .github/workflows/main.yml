@@ -31,10 +31,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        env:
-          SITE_SERVER: ${{ secrets.SITE_SERVER }}
-          SITE_USER: ${{ secrets.SITE_USER }}
-          SITE_PASS: ${{ secrets.SITE_PASS }}
         with:
           server: ${{ secrets.SITE_SERVER }}
           username: ${{ secrets.SITE_USER }}
