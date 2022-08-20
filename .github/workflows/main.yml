@@ -33,8 +33,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         env:
           SITE_SERVER: ${{ secrets.SITE_SERVER }}
-          SITE_USER: ${{ PRD.SITE_USER }}
-          SITE_PASS: ${{ PRD.SITE_PASS }}
+          SITE_USER: ${{ secrets.SITE_USER }}
+          SITE_PASS: ${{ secrets.SITE_PASS }}
         with:
           server: ${{ SITE_SERVER }}
           username: ${{ SITE_USER }}
