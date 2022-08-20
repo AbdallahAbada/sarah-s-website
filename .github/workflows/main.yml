@@ -23,7 +23,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Retrieve the secret and decode it to a file
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo "Hello, world!"
@@ -31,10 +31,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
-#        env:
-#          SITE_SERVER: ${{ PRD.SITE_SERVER }}
-#          SITE_USER: ${{ PRD.SITE_USER }}
-#          SITE_PASS: ${{ PRD.SITE_PASS }}
         with:
           server: ${{ SITE_SERVER}}
           username: ${{ SITE_USER}}
