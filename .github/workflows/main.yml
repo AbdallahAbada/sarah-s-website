@@ -32,7 +32,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         env:
-          SITE_SERVER: ${{ PRD.SITE_SERVER }}
+          SITE_SERVER: ${{ secrets.SITE_SERVER }}
           SITE_USER: ${{ PRD.SITE_USER }}
           SITE_PASS: ${{ PRD.SITE_PASS }}
         with:
